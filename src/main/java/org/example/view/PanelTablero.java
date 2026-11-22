@@ -1,4 +1,9 @@
 package org.example.view;
 
-public class PanelTablero {
+import javax.swing.*;
+
+public class PanelTablero extends JPanel {
+
+    public PanelTablero() {
+    }
 }

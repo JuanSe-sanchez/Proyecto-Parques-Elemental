@@ -1,4 +1,9 @@
 package org.example.view;
 
-public class PanelDados {
+import javax.swing.*;
+
+public class PanelDados extends JPanel {
+
+    public PanelDados() {
+    }
 }

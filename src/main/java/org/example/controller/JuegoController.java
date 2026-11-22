@@ -1,20 +1,30 @@
 package org.example.controller;
 
+import org.example.model.Ficha;
+import org.example.service.DadoService;
+import org.example.service.FichaService;
+import org.example.service.PartidaService;
+
 public class JuegoController {
 
-    private JuegoService juegoService;
-    private VentanaPrincipa vista;
+    private PartidaService partidaService;
+    private DadoService dadoService;
+    private FichaService fichaService;
 
-    public void iniciarPartida(){
+    public void iniciarPartida() {
     }
 
-    public void lanzarDado(){
+    public int lanzarDado() {
+        return 0;
     }
 
-    public void seleccionarFicha(){
+    public void seleccionarFicha(Ficha ficha) {
     }
 
-    public void finalizarPartida(){
+    public void moverFicha(Ficha ficha) {
+    }
+
+    public void finalizarPartida() {
     }
 
 }
