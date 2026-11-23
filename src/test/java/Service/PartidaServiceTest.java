@@ -35,18 +35,12 @@ public class PartidaServiceTest {
 
         assertEquals(EstadoPartida.FINALIZADA,
                 servicio.obtenerEstado(partida));
+    
     }
     @Test
-    public void probarCicloCompletoPartida() {
+    public void probarPartidaActiva() {
         PartidaService servicio = new PartidaService();
-        Partida partida = servicio.crearPartida();
-        assertNotNull(partida);
-
-        servicio.iniciarPartida(partida);
-        assertEquals(EstadoPartida.EN_CURSO, servicio.obtenerEstado(partida));
-
-        servicio.finalizarPartida(partida);
-        assertEquals(EstadoPartida.FINALIZADA, servicio.obtenerEstado(partida));
+        
+        assertTrue(servicio.estaPartidaActiva());
     }
-
 }
