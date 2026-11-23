@@ -39,5 +39,14 @@ public class JugadorServiceTest {
 
         assertEquals("Juan", servicio.obtenerNombre(jugador));
     }
+    
+  @Test
+    public void probarColorJugador() {
+        JugadorService servicio = new JugadorService();
+        Jugador jugador = servicio.crearJugador(
+                "Juan", ColorJugador.ROJO
+        );
 
+        assertEquals(ColorJugador.ROJO, jugador.obtenerColor());
+    }
 }
