@@ -38,4 +38,12 @@ public class VentanaPrincipal extends JFrame {
     public PanelDados obtenerPanelDados() {
         return panelDados;
     }
+    public void mostrarVentana() {
+        setVisible(true);
+    }
+
+    public void refrescarVista() {
+        revalidate();
+        repaint();
+    }
 }
