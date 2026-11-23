@@ -30,6 +30,11 @@ public class CasillaServiceTest {
         assertEquals(TipoCasilla.NORMAL,
                 servicio.obtenerTipo(casilla));
     }
-
+    
+    @Test
+    public void probarObtenerCantidadCasillas() {
+        CasillaService servicio = new CasillaService();
+        assertEquals(68, servicio.obtenerCantidadCasillas());
+    }
 
 }
