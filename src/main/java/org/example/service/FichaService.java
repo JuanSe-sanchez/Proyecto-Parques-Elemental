@@ -32,5 +32,10 @@ public class FichaService {
     public EstadoFicha obtenerEstado(Ficha ficha) {
         return ficha.obtenerEstado();
     }
-
+    
+    public void validarPasos(int pasos) {
+        if (pasos <= 0) {
+            throw new IllegalArgumentException("La cantidad de pasos debe ser mayor que cero");
+        }
+    }
 }
