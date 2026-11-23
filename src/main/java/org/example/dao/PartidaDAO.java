@@ -91,4 +91,7 @@ public class PartidaDAO {
 
         return partidas;
     }
+    public int contarPartidas() {
+        return listar().size();
+    }
 }
