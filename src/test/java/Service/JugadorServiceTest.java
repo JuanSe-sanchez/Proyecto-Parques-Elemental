@@ -49,4 +49,10 @@ public class JugadorServiceTest {
 
         assertEquals(ColorJugador.ROJO, jugador.obtenerColor());
     }
+    @Test
+    public void probarCantidadJugadores() {
+        JugadorService servicio = new JugadorService();
+        
+        assertEquals(4, servicio.obtenerCantidadJugadores());
+    }
 }
