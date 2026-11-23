@@ -6,4 +6,8 @@ public class PanelTablero extends JPanel {
 
     public PanelTablero() {
     }
+     public void refrescarTablero() {
+        revalidate();
+        repaint();
+    }
 }
