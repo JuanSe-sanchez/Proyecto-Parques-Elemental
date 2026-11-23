@@ -21,5 +21,8 @@ public class DadoService {
     public int obtenerValor(Dado dado) {
         return dado.obtenerValor();
     }
-
+    
+    public boolean esValorValido(int valor) {
+        return valor >= 1 && valor <= 6;
+    }
 }
