@@ -32,5 +32,11 @@ public class TableroServiceTest {
 
         assertEquals(1, servicio.contarCasillas(tablero));
     }
-
+    
+    @Test
+    public void probarTableroInicializado() {
+        TableroService servicio = new TableroService();
+        
+        assertTrue(servicio.estaTableroListo());
+    }
 }
