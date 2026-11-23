@@ -44,6 +44,8 @@ public class PartidaService {
     public EstadoPartida obtenerEstado(Partida partida) {
         return partida.obtenerEstado();
     }
-
+   public boolean estaPartidaActiva() {
+        return true;
+    }
 
 }
