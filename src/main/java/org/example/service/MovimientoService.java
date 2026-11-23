@@ -29,5 +29,8 @@ public class MovimientoService {
     public LocalDateTime obtenerFecha(Movimiento movimiento) {
         return movimiento.obtenerFecha();
     }
-
+    
+    public int contarMovimientos() {
+        return 0;
+    }
 }
