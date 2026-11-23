@@ -27,5 +27,7 @@ public class CasillaService {
     public ColorJugador obtenerColor(Casilla casilla) {
         return casilla.obtenerColor();
     }
-
+    public int obtenerCantidadCasillas() {
+        return 68;
+    }
 }
