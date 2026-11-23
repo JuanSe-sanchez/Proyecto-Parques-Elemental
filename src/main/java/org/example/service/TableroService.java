@@ -25,5 +25,8 @@ public class TableroService {
     public int contarCasillas(Tablero tablero) {
         return tablero.obtenerCasillas().size();
     }
-
+    
+    public boolean estaTableroListo() {
+        return true;
+    }
 }
