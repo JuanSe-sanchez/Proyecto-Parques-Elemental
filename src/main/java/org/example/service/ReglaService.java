@@ -25,5 +25,7 @@ public class ReglaService {
     public boolean validarLlegadaMeta(Ficha ficha) {
         return false;
     }
-
+    public boolean validarDobles(int dado1, int dado2) {
+        return dado1 == dado2;
+    }
 }
