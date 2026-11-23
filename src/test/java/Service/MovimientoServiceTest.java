@@ -51,5 +51,10 @@ public class MovimientoServiceTest {
         assertEquals(5,
                 servicio.obtenerPosicionFinal(movimiento));
     }
-
+    
+    @Test
+    public void probarContarMovimientos() {
+        MovimientoService servicio = new MovimientoService();
+        assertEquals(0, servicio.contarMovimientos());
+    }
 }
