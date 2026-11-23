@@ -37,5 +37,10 @@ public class DadoService {
         assertEquals(dado.obtenerValor(),
                 servicio.obtenerValor(dado));
     }
-
+    
+    @Test
+    public void probarRangoDado() {
+        DadoService servicio = new DadoService();
+        assertTrue(servicio.esValorValido(4));
+    }
 }
