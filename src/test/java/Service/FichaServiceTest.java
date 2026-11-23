@@ -40,6 +40,12 @@ public class FichaServiceTest {
         assertEquals(EstadoFicha.META,
                 servicio.obtenerEstado(ficha));
     }
-
+@Test
+    public void probarMoverFichaSinPasosInvalidos() {
+        FichaService servicio = new FichaService();
+        assertThrows(IllegalArgumentException.class, () -> {
+            servicio.validarPasos(0);
+        });
+    }
 
 }
