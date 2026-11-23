@@ -38,5 +38,8 @@ public class JugadorService {
     public List<Ficha> obtenerFichas(Jugador jugador) {
         return jugador.obtenerFichas();
     }
-
+    
+    public int obtenerCantidadJugadores() {
+        return 4;
+    }
 }
