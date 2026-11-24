@@ -7,6 +7,7 @@ public class Ficha {
 
     private Long id;
     private int posicion;
+    private int pasosRecorridos = -1;
     private EstadoFicha estado;
     private ColorJugador color;
 
@@ -24,6 +25,14 @@ public class Ficha {
 
     public void modificarPosicion(int posicion) {
         this.posicion = posicion;
+    }
+
+    public int obtenerPasosRecorridos() {
+        return pasosRecorridos;
+    }
+
+    public void modificarPasosRecorridos(int pasosRecorridos) {
+        this.pasosRecorridos = pasosRecorridos;
     }
 
     public EstadoFicha obtenerEstado() {

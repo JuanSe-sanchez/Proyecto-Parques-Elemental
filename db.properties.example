@@ -1,0 +1,7 @@
+# Configuracion local de base de datos PostgreSQL (Neon)
+# Copia este archivo como db.properties en la raiz del proyecto o usa variables de entorno:
+# PARQUES_DB_URL, PARQUES_DB_USER, PARQUES_DB_PASSWORD
+
+db.url=jdbc:postgresql://TU_HOST/neondb?sslmode=require
+db.user=TU_USUARIO
+db.password=TU_CONTRASENA
